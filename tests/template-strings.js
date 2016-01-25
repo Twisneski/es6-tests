@@ -21,6 +21,16 @@ describe('template strings', function () {
   });
 });
 
+it('can evaluate expressions', function(){
+  var string = '1 + 2 = $ 1+ 2}';
+  expect(string).to.equal('1+ 2 = 3');
+});
 
+it('can handle multiline strings', function () {
+  var string = 'hello
+                world';
+
+  expect(string).to.equal('hello\n       world');
+});
 
 
