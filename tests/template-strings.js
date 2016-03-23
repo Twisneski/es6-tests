@@ -27,8 +27,7 @@ it('can evaluate expressions', function(){
 });
 
 it('can handle multiline strings', function () {
-  var string = 'hello
-                world';
+  var string = 'hello world';
 
   expect(string).to.equal('hello\n       world');
 });
